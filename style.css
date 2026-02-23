@@ -1,0 +1,443 @@
+/* =========================
+   DESIGN SYSTEM VARIABLES
+========================= */
+
+:root {
+    --coffee-dark: #3E2723;
+    --coffee-medium: #5D4037;
+    --coffee-light: #D7CCC8;
+    --cream: #F8F5F2;
+    --white: #FFFFFF;
+    --text-dark: #1E1E1E;
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--text-dark);
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    scroll-margin-top: 100px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--coffee-dark);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 16px;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    height: 70%;
+    width: 4px;
+    background-color: var(--coffee-dark);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: var(--coffee-dark) !important;
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   NAVBAR INTERACTION
+========================= */
+.nav-link {
+    position: relative;
+    color: var(--white) !important;
+    font-weight: 500;
+    margin-left: 20px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+/* Hover Effect */
+.nav-link:hover {
+    color: var(--white) !important;
+    text-shadow: 0 0 1px var(--white);
+    transform: scale(1.05);
+}
+
+/* Underline Animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 60% 25%;
+    border: 2px solid var(--coffee-dark);
+    border-radius: 8px;   /* subtle rounding */
+    background: var(--white);
+    padding: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.accent-bar {
+    position: absolute;
+    width: 6px;
+    height: 70%;
+    background-color: var(--coffee-dark);
+    left: 28%;
+    top: 15%;
+    z-index: 1;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-dark {
+    background-color: var(--coffee-dark);
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: var(--coffee-medium);
+}
+
+.btn-outline-dark {
+    border: 1px solid var(--coffee-dark);
+    color: var(--coffee-dark);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--coffee-dark);
+    color: var(--white);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    border: 1px solid var(--coffee-light);
+    border-radius: 4px;
+    background-color: var(--white);
+    box-shadow: none;
+}
+
+.card:hover {
+    border-color: var(--coffee-dark);
+    transition: 0.3s ease;
+}
+
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
+#experience ul {
+    padding-left: 20px;
+}
+
+#experience h6 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.experience-meta h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experience-meta p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--white);
+    color: var(--coffee-dark);
+    font-size: 14px;
+}
+
+/* =========================
+   HERO REFINEMENT
+========================= */
+
+.hero-section {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;   /* instead of center */
+}
+.hero-section .row {
+    transform: translateY(-35px);
+}
+
+.hero-name {
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--coffee-medium);
+    margin-bottom: 20px;
+}
+
+.hero-summary {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+/* Photo Wrapper */
+.hero-photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Accent Bar - Option B */
+.accent-bar {
+    position: absolute;
+    width: 6px;
+    height: 75%;   /* slightly shorter than image */
+    background-color: var(--coffee-dark);
+    left: 18%;
+    top: 12%;
+    z-index: 1;
+}
+
+/* Image */
+.hero-img {
+    max-width: 280px;
+    border: 2px solid var(--coffee-dark);
+    border-radius: 4px;
+    background: var(--white);
+    padding: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   EXPERIENCE SECTION (TIMELINE STYLE)
+========================= */
+
+.experience-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--white);
+}
+
+.experience-meta {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-line {
+
+    display: none;
+}
+
+.role-title {
+    font-size: 14px;
+    color: var(--coffee-medium);
+}
+
+.project-block {
+    margin-bottom: 30px;
+}
+
+.project-block h6 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project-block ul {
+    padding-left: 20px;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+    background-color: var(--cream);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.skill-card {
+    background-color: var(--white);
+    border: 1px solid var(--coffee-light);
+    padding: 25px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.skill-card h6 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--coffee-dark);
+}
+
+.skill-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.skill-card:hover {
+    border-color: var(--coffee-dark);
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-section {
+    background-color: var(--white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.project-card {
+    border: 1px solid var(--coffee-light);
+    padding: 30px;
+    border-radius: 4px;
+    background-color: var(--white);
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.project-card h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--coffee-dark);
+}
+
+.tech-stack {
+    font-size: 13px;
+    color: var(--coffee-medium);
+    margin-bottom: 15px;
+}
+
+.project-card ul {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.project-card:hover {
+    border-color: var(--coffee-dark);
+}
+
+
+/* =========================
+   FADE IN ANIMATION
+========================= */
+
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE REFINEMENT
+========================= */
+
+@media (max-width: 992px) {
+
+    .hero-section {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-summary {
+        margin: 0 auto;
+    }
+
+    .accent-bar {
+        display: none;  /* hide accent bar on mobile */
+    }
+
+    .hero-img {
+        margin-bottom: 20px;
+    }
+
+    .experience-meta {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* =========================
+   COLOUR CORRECTION
+========================= */
+.hero-section,
+.skills-section,
+.projects-section {
+    background-color: var(--cream);
+}
+
+#about,
+.experience-section,
+#education {
+    background-color: var(--white);
+}
