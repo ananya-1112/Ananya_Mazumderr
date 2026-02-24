@@ -374,7 +374,7 @@ footer {
 ========================= */
 
 #projects {
-    scroll-margin-top: 4px;   /* slightly smaller */
+    scroll-margin-top: -10px;   /* slightly smaller */
 }
 
 .projects-section {
@@ -407,7 +407,24 @@ footer {
     line-height: 1.7;
 }
 
+/* =========================
+   PROJECT VIEW CODE LINK
+========================= */
 
+.project-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--coffee-dark);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--coffee-medium);
+    transform: translateX(4px);
+}
 /* =========================
    FADE IN ANIMATION
 ========================= */
@@ -488,6 +505,10 @@ footer {
 /* =========================
    CERTIFICATIONS SECTION
 ========================= */
+
+#certifications {
+    scroll-margin-top: 80px;   /* slightly smaller */
+}
 
 .certifications-section {
     padding-top: 100px;
