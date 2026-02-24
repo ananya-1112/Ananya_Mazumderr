@@ -28,7 +28,6 @@ body {
 section {
     padding-top: 80px;
     padding-bottom: 80px;
-    scroll-margin-top: 100px;
 }
 
 
@@ -171,6 +170,14 @@ h2::before {
 }
 
 /* =========================
+  ABOUT SECTION
+========================= */
+
+#about {
+    scroll-margin-top: 250px;
+}
+
+/* =========================
    EXPERIENCE SECTION
 ========================= */
 
@@ -193,6 +200,48 @@ h2::before {
     line-height: 1.5;
 }
 
+/* =========================
+   EXPERIENCE SECTION (TIMELINE STYLE)
+========================= */
+#experience {
+    scroll-margin-top: 60px;   /* slightly smaller */
+}
+.experience-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--white);
+}
+
+.experience-meta {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-line {
+
+    display: none;
+}
+
+.role-title {
+    font-size: 14px;
+    color: var(--coffee-medium);
+}
+
+.project-block {
+    margin-bottom: 30px;
+}
+
+.project-block h6 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project-block ul {
+    padding-left: 20px;
+    line-height: 1.7;
+    font-size: 15px;
+}
 /* =========================
    FOOTER
 ========================= */
@@ -267,49 +316,11 @@ footer {
 }
 
 /* =========================
-   EXPERIENCE SECTION (TIMELINE STYLE)
-========================= */
-
-.experience-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: var(--white);
-}
-
-.experience-meta {
-    position: relative;
-    padding-left: 20px;
-}
-
-.timeline-line {
-
-    display: none;
-}
-
-.role-title {
-    font-size: 14px;
-    color: var(--coffee-medium);
-}
-
-.project-block {
-    margin-bottom: 30px;
-}
-
-.project-block h6 {
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.project-block ul {
-    padding-left: 20px;
-    line-height: 1.7;
-    font-size: 15px;
-}
-
-/* =========================
    SKILLS SECTION
 ========================= */
+#skills {
+    scroll-margin-top: 100px;
+}
 
 .skills-section {
     background-color: var(--cream);
@@ -317,11 +328,9 @@ footer {
     padding-bottom: 100px;
 }
 
+
 .skill-card {
-    background-color: var(--white);
-    border: 1px solid var(--coffee-light);
     padding: 25px;
-    border-radius: 4px;
     transition: 0.3s ease;
     height: 100%;
 }
@@ -337,13 +346,14 @@ footer {
     line-height: 1.6;
 }
 
-.skill-card:hover {
-    border-color: var(--coffee-dark);
-}
 
 /* =========================
    PROJECTS SECTION
 ========================= */
+
+#projects {
+    scroll-margin-top: 4px;   /* slightly smaller */
+}
 
 .projects-section {
     background-color: var(--white);
@@ -352,10 +362,7 @@ footer {
 }
 
 .project-card {
-    border: 1px solid var(--coffee-light);
     padding: 30px;
-    border-radius: 4px;
-    background-color: var(--white);
     transition: 0.3s ease;
     height: 100%;
 }
@@ -376,10 +383,6 @@ footer {
     padding-left: 20px;
     font-size: 14px;
     line-height: 1.7;
-}
-
-.project-card:hover {
-    border-color: var(--coffee-dark);
 }
 
 
@@ -428,11 +431,76 @@ footer {
 }
 
 /* =========================
+   EDUCATION SECTION
+========================= */
+
+#education {
+    scroll-margin-top: 150px;   /* slightly smaller */
+}
+
+.education-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--white);  /* or cream based on alternation */
+}
+.education-card {
+    padding: 25px;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.education-card h6 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.edu-degree {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.edu-meta {
+    font-size: 13px;
+    color: var(--coffee-medium);
+}
+/* =========================
+   CERTIFICATIONS SECTION
+========================= */
+
+.certifications-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.cert-card {
+    padding: 30px;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.cert-card h6 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--coffee-dark);
+}
+
+.cert-card ul {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.cert-card ul li {
+    margin-bottom: 8px;
+}
+/* =========================
    COLOUR CORRECTION
 ========================= */
 .hero-section,
 .skills-section,
-.projects-section {
+.projects-section,
+.certifications-section {
     background-color: var(--cream);
 }
 
@@ -441,3 +509,9 @@ footer {
 #education {
     background-color: var(--white);
 }
+
+
+
+
+
+
