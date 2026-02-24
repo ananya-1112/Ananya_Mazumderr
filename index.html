@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -89,9 +90,12 @@
               >
                 Download Resume
               </a>
-              <a href="mailto:ananya1562000@gmail.com" class="btn btn-dark">
-                Contact
-              </a>
+
+              <button 
+              type="button" 
+              class="btn btn-dark" 
+              data-bs-toggle="modal" 
+              data-bs-target="#contactModal"> Contact </button>
             </div>
           </div>
 
@@ -406,5 +410,64 @@
 
     <!-- Custom JS -->
     <script src="script.js"></script>
+
+   <!-- ================= CONTACT MODAL ================= -->
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header custom-modal-header">
+        <h5 class="modal-title">Contact Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="contact-row">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">
+            <a href="mailto:ananya1562000@gmail.com">
+              ananya1562000@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <hr class="contact-divider">
+
+        <div class="contact-row">
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">
+            <a href="tel:+919113084075">
+              +91 9113084075
+            </a>
+          </div>
+        </div>
+
+        <hr class="contact-divider">
+
+        <div class="contact-row">
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">
+            <a href="https://www.linkedin.com/in/ananya1506/" target="_blank">
+             www.linkedin.com/in/ananya1506/
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Floating Contact Icon -->
+<button 
+  class="floating-contact-icon"
+  data-bs-toggle="modal"
+  data-bs-target="#contactModal">
+  <i class="bi bi-envelope-fill"></i>
+</button>
+
+<!--End here-->
   </body>
 </html>

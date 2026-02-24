@@ -494,6 +494,8 @@ footer {
 .cert-card ul li {
     margin-bottom: 8px;
 }
+
+
 /* =========================
    COLOUR CORRECTION
 ========================= */
@@ -510,6 +512,79 @@ footer {
     background-color: var(--white);
 }
 
+/* =========================
+   FORMAL CONTACT MODAL
+========================= */
+
+.custom-modal {
+    border-radius: 6px;
+    border: 1px solid var(--coffee-light);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.custom-modal-header {
+    border-bottom: 1px solid var(--coffee-light);
+}
+
+.modal-title {
+    color: var(--coffee-dark);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contact-row {
+    padding: 10px 0;
+}
+
+.contact-label {
+    font-size: 13px;
+    color: var(--coffee-medium);
+    margin-bottom: 4px;
+}
+
+.contact-value a {
+    font-size: 15px;
+    color: var(--coffee-dark);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact-value a:hover {
+    text-decoration: underline;
+}
+
+.contact-divider {
+    margin: 8px 0;
+    border-color: var(--coffee-light);
+}
+
+/* =========================
+   FLOATING CONTACT ICON
+========================= */
+
+.floating-contact-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--coffee-dark);
+    color: var(--white);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 1050;
+}
+
+.floating-contact-icon:hover {
+    background-color: var(--coffee-medium);
+}
 
 
 
